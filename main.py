@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 options = webdriver.ChromeOptions()
 options.headless = True
 
-CHROME_DRIVER_PATH = "TYPE-HERE"
+CHROME_DRIVER_PATH = "/Users/albertocrescini/Downloads/chromedriver"
 OUTPUT_FILE = "iceland.csv"
 
 seats = ""
@@ -102,4 +102,4 @@ if __name__ == "__main__":
             print("The number you inserted is not valid!")
 
     rides = rides_list()
-    run_onthreads(rides, th)
+    run_onthreads(rides)
